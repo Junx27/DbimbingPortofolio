@@ -16,7 +16,7 @@ function About() {
     <div>
       {loading ? (
         <div
-          className={`transition-all duration-500 w-full bg-left h-screen bg-[url('cover.png')] ${
+          className={`transition-all duration-500 w-full bg-left h-screen [background-image:url('cover.png')] ${
             loading ? "scale-[101%]" : "scale-100"
           }`}
         ></div>

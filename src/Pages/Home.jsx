@@ -16,7 +16,7 @@ function Home() {
     <div>
       {loading ? (
         <div
-          className={`transition-all duration-500 bg-cover w-full h-screen bg-[url('cover.png')] py-10 ${
+          className={`transition-all duration-500 bg-cover w-full h-screen [background-image:url('cover.png')] py-10 ${
             loading ? "scale-[101%]" : "scale-100"
           }`}
         ></div>

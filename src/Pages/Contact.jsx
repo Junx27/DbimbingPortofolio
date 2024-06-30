@@ -16,7 +16,7 @@ function Contact() {
     <div>
       {loading ? (
         <div
-          className={`transition-all duration-500 bg-top p-20 w-full h-screen bg-[url('cover.png')] ${
+          className={`transition-all duration-500 bg-top p-20 w-full h-screen [background-image:url('public/cover.png')] ${
             loading ? "scale-[101%]" : "scale-100"
           }`}
         ></div>

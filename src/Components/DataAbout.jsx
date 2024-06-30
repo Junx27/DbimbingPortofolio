@@ -13,7 +13,7 @@ function DataAbout() {
   }, []);
   return (
     <div
-      className={`transition-all duration-500 w-full bg-fixed md:bg-left h-screen bg-no-repeat bg-[url('https://png.pngtree.com/background/20220723/original/pngtree-background-biru-keren-dan-kosong-abstract-untuk-template-desain-powerpoint-ppt-picture-image_1738466.jpg')] overflow-auto ${
+      className={`transition-all duration-500 w-full bg-fixed md:bg-left h-screen  overflow-auto ${
         loading ? "scale-[101%]" : "scale-100"
       }`}
     >

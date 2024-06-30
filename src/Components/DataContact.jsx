@@ -13,7 +13,7 @@ function DataContact() {
   }, []);
   return (
     <div
-      className={`transition-all duration-500 bg-top p-5 pt-12 md:pt-20 md:p-20 w-full h-screen [background-image:url('cover.png')] overflow-auto ${
+      className={`transition-all duration-500 bg-top p-5 pt-12 md:pt-20 md:p-20 w-full h-screen bg-[url('https://junxwebdev.my.id/cover.png')] overflow-auto ${
         loading ? "scale-[101%]" : "scale-100"
       }`}
     >

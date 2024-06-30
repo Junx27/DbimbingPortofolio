@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portofolio";
 import Contact from "./Pages/Contact";
+import NotFound from "./Pages/NotFound";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/about" Component={About} />
         <Route path="/portfolio" Component={Portfolio} />
         <Route path="/contact" Component={Contact} />
+        <Route path="/*" Component={NotFound} />
       </Routes>
     </div>
   );

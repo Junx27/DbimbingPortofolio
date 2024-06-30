@@ -119,7 +119,7 @@ function DataPortofolio() {
                 >
                   <div
                     className={`z-20 fixed pt-5 pb-5 mx-3 md:pb-0 md:pt-20 bg-white/20 w-[403px] h-[250px] rounded-[30px] transition-all duration-700 shadow-lg shadow-blue-600/20 ${
-                      openFeature ? "translate-x-[800px]" : "translate-x-0"
+                      openFeature ? "-translate-x-[800px]" : "translate-x-0"
                     }`}
                   >
                     <img

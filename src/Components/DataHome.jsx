@@ -70,7 +70,7 @@ function DataHome() {
               onClick={downloadPDF}
             >
               <button className="transition-all duration-500 border border-blue-600 p-2 px-4 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white">
-                Portofolio PDF
+                Portfolio PDF
               </button>
             </a>
             <a

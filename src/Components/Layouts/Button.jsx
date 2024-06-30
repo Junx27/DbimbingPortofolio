@@ -2,7 +2,7 @@
 function Button({ nameButton, className }) {
   return (
     <div
-      className={` w-32 ${className} group relative p-2 rounded-full bg-blue-700 text-center text-white overflow-hidden cursor-pointer`}
+      className={`w-32 text-white group relative p-2 rounded-full bg-blue-700 text-center overflow-hidden cursor-pointer ${className}`}
     >
       <p className="transition-all duration-500 group-hover:-translate-x-32">
         {nameButton}

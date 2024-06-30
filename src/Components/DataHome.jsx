@@ -14,7 +14,7 @@ function DataHome() {
   }, []);
   return (
     <div
-      className={`transition-all duration-500 bg-cover w-full h-screen bg-[url('https://dbimbing-portofolio.vercel.app/cover.png')] py-10 ${
+      className={`transition-all duration-500 bg-cover w-full h-screen bg-[url('https://dbimbing-portofolio.vercel.app/cover.png')] py-10 overflow-hidden ${
         loading ? "scale-[101%]" : "scale-100"
       }`}
     >
@@ -50,7 +50,7 @@ function DataHome() {
             >
               <Button
                 nameButton={"Contact Me"}
-                className="bg-transparent border border-black text-black w-20 md:w-32"
+                className="bg-transparent border border-black text-gray-600 w-20 md:w-32"
               />
             </a>
             <a

@@ -11,11 +11,11 @@ export default function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/about" Component={About} />
-        <Route path="/portfolio" Component={Portfolio} />
-        <Route path="/contact" Component={Contact} />
-        <Route path="/*" Component={NotFound} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </div>
   );

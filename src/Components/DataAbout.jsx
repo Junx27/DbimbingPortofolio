@@ -13,10 +13,9 @@ function DataAbout() {
   }, []);
   return (
     <div
-      className={`transition-all duration-500 w-full bg-fixed md:bg-left h-screen overflow-auto ${
+      className={`transition-all duration-500 w-full bg-fixed md:bg-left h-screen bg-no-repeat bg-[url('https://png.pngtree.com/background/20220723/original/pngtree-background-biru-keren-dan-kosong-abstract-untuk-template-desain-powerpoint-ppt-picture-image_1738466.jpg')] overflow-auto ${
         loading ? "scale-[101%]" : "scale-100"
       }`}
-      style={{ backgroundImage: `url('public/cover.png')` }}
     >
       <div
         className={`transition-all duration-700 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 px-5 md:px-10 pt-20 md:pt-32 pb-10 md:pb-0 ${

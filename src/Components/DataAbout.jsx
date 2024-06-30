@@ -13,7 +13,7 @@ function DataAbout() {
   }, []);
   return (
     <div
-      className={`transition-all duration-500 w-full bg-fixed md:bg-left h-screen  overflow-auto ${
+      className={`transition-all duration-500 w-full bg-fixed md:bg-left h-screen bg-[url('cover.png')] overflow-auto ${
         loading ? "scale-[101%]" : "scale-100"
       }`}
     >

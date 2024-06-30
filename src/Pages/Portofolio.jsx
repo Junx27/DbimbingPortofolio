@@ -16,7 +16,7 @@ function Portofolio() {
     <div>
       {loading ? (
         <div
-          className={`transition-all duration-500 bg-left-top w-full h-screen bg-[url('https://junxwebdev.my.id/cover.png')] ${
+          className={`transition-all duration-500 bg-left-top w-full h-screen bg-[url('https://dbimbing-portofolio.vercel.app/cover.png')] ${
             loading ? "scale-[101%]" : "scale-100"
           }`}
         ></div>

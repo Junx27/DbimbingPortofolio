@@ -51,7 +51,7 @@ function DataPortofolio() {
   return (
     <div>
       <div
-        className={`block md:hidden transition-all duration-500 bg-fixed w-full h-screen bg-[url('https://junxwebdev.my.id/cover.png')] pb-5 md:pb-0${
+        className={`block md:hidden transition-all duration-500 bg-fixed w-full h-screen bg-[url('https://dbimbing-portofolio.vercel.app/cover.png')] pb-5 md:pb-0${
           loading ? "scale-[101%]" : "scale-100"
         }`}
       >
@@ -282,7 +282,7 @@ function DataPortofolio() {
         )}
       </div>
       <div
-        className={`hidden md:block transition-all duration-500 bg-left-top w-full h-screen bg-[url('https://junxwebdev.my.id/cover.png')] pb-5 md:pb-0${
+        className={`hidden md:block transition-all duration-500 bg-left-top w-full h-screen bg-[url('https://dbimbing-portofolio.vercel.app/cover.png')] pb-5 md:pb-0${
           loading ? "scale-[101%]" : "scale-100"
         }`}
       >

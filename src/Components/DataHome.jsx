@@ -3,6 +3,7 @@ import Button from "../Components/Layouts/Button";
 
 function DataHome() {
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     const startLoading = () => {
       setLoading(true);
@@ -12,6 +13,26 @@ function DataHome() {
     };
     startLoading();
   }, []);
+  const downloadCV = (url, filename, link) => {
+    url = "http://localhost:5173/CV.pdf";
+    filename = "CV Tri Saptono";
+    link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const downloadPDF = (url, filename, link) => {
+    url = "http://localhost:5173/Portfolio.pdf";
+    filename = "Portfolio Tri Saptono";
+    link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div
       className={`transition-all duration-500 bg-cover w-full h-screen bg-[url('https://dbimbing-portofolio.vercel.app/cover.png')] py-10 overflow-hidden ${
@@ -44,18 +65,18 @@ function DataHome() {
             }`}
           >
             <a
-              href="https://wa.me/6281217114742/"
+              href="#DownloadPortfolio"
               className="flex items-center hover:text-blue-600 my-3"
-              target="blank"
+              onClick={downloadPDF}
             >
-              <Button
-                nameButton={"Contact Me"}
-                className="bg-transparent border border-black text-gray-600 w-20 md:w-32"
-              />
+              <button className="transition-all duration-500 border border-blue-600 p-2 px-4 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white">
+                Portofolio PDF
+              </button>
             </a>
             <a
-              href="#downloadCV"
+              href="#DownloadCV"
               className="flex items-center hover:text-blue-600 my-3"
+              onClick={downloadCV}
             >
               <Button nameButton={"Download CV"} />
             </a>

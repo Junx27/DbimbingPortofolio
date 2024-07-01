@@ -14,7 +14,7 @@ function DataHome() {
     startLoading();
   }, []);
   const downloadCV = (url, filename, link) => {
-    url = "http://localhost:5173/CV.pdf";
+    url = "https://dbimbing-portofolio.vercel.app/CV.pdf";
     filename = "CV Tri Saptono";
     link = document.createElement("a");
     link.href = url;
@@ -24,7 +24,7 @@ function DataHome() {
     document.body.removeChild(link);
   };
   const downloadPDF = (url, filename, link) => {
-    url = "http://localhost:5173/Portfolio.pdf";
+    url = "https://dbimbing-portofolio.vercel.app/Portfolio.pdf";
     filename = "Portfolio Tri Saptono";
     link = document.createElement("a");
     link.href = url;

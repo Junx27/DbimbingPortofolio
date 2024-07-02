@@ -18,7 +18,7 @@ function DataContact() {
       }`}
     >
       <div
-        className={`transition-all duration-700 delay-100 bg-white/50 md:bg-white/20 w-full md:w-[500px] mx-0 md:mx-auto rounded-[30px] mt-10 p-10 shadow-lg shadow-sky-600/20 ${
+        className={`transition-all duration-700 delay-100 bg-white/50 md:bg-white/20 w-full md:w-[500px] mx-0 md:mx-auto rounded-[30px] mt-10 p-10 pb-20 shadow-lg shadow-sky-600/20 ${
           loading ? "opacity-0 [transform:rotateY(180deg)]" : "opacity-100"
         }`}
       >
@@ -29,7 +29,7 @@ function DataContact() {
             className="flex items-center hover:text-blue-600 my-3"
             target="blank"
           >
-            <img src="linkedin.png" alt="" className="w-10 h-10 mr-3" />
+            <img src="linkedin.png" alt="" className="w-5 h-5 mr-3" />
             https://www.linkedin.com/in/tri-saptono/
           </a>
           <a
@@ -37,7 +37,7 @@ function DataContact() {
             className="flex items-center hover:text-blue-600 my-3"
             target="blank"
           >
-            <img src="instagram.png" alt="" className="w-10 h-10 mr-3" />
+            <img src="instagram.png" alt="" className="w-5 h-5 mr-3" />
             https://www.instagram.com/junx_webdev/
           </a>
           <a
@@ -45,7 +45,7 @@ function DataContact() {
             className="flex items-center hover:text-blue-600 my-3"
             target="blank"
           >
-            <img src="facebook.png" alt="" className="w-10 h-10 mr-3" />
+            <img src="facebook.png" alt="" className="w-5 h-5 mr-3" />
             https://www.facebook.com/jung.gurit/
           </a>
           <a
@@ -53,7 +53,7 @@ function DataContact() {
             className="flex items-center hover:text-blue-600 my-3"
             target="blank"
           >
-            <img src="mail.png" alt="" className="w-10 h-10 mr-3" />
+            <img src="mail.png" alt="" className="w-5 h-5 mr-3" />
             trisaptonoitsumo@gmail.com
           </a>
           <a
@@ -61,7 +61,7 @@ function DataContact() {
             className="flex items-center hover:text-blue-600 my-3"
             target="blank"
           >
-            <img src="whatsapp.png" alt="" className="w-10 h-10 mr-3" />
+            <img src="whatsapp.png" alt="" className="w-5 h-5 mr-3" />
             081217114742
           </a>
           <a
@@ -69,7 +69,7 @@ function DataContact() {
             className="flex items-center hover:text-blue-600 my-3"
             target="blank"
           >
-            <img src="browser.png" alt="" className="w-10 h-10 mr-3" />
+            <img src="browser.png" alt="" className="w-5 h-5 mr-3" />
             https://junxwebdev.my.id/
           </a>
           <a
@@ -77,7 +77,7 @@ function DataContact() {
             className="flex items-center hover:text-blue-600 my-3"
             target="blank"
           >
-            <img src="github.png" alt="" className="w-10 h-10 mr-3" />
+            <img src="github.png" alt="" className="w-5 h-5 mr-3" />
             https://github.com/Junx27
           </a>
         </div>

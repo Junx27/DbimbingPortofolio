@@ -118,7 +118,7 @@ function DataPortofolio() {
                   }`}
                 >
                   <div
-                    className={`z-20 fixed pt-5 pb-5 mx-3 md:pb-0 md:pt-20 bg-white/20 w-[403px] h-[250px] rounded-[30px] transition-all duration-700 shadow-lg shadow-blue-600/20 ${
+                    className={`z-20 fixed pt-5 pb-5 md:pb-0 md:pt-20 bg-white/20 w-full h-[250px] rounded-[30px] transition-all duration-700 shadow-lg shadow-blue-600/20 ${
                       openFeature ? "-translate-x-[800px]" : "translate-x-0"
                     }`}
                   >
@@ -146,7 +146,7 @@ function DataPortofolio() {
                     .map((feature) => (
                       <div
                         key={feature.id}
-                        className={`transition-all mx-3 duration-1000 fixed top-[10%] w-[403px] h-[250px] p-5 bg-white/30 rounded-[30px] shadow-lg shadow-blue-600/20 ${
+                        className={`transition-all duration-1000 fixed top-[13%] w-full h-[250px] p-5 bg-white/30 rounded-[30px] shadow-lg shadow-blue-600/20 ${
                           openFeature ? "translate-x-0" : "translate-x-[800px]"
                         } top-0`}
                       >
@@ -159,7 +159,7 @@ function DataPortofolio() {
                     ))}
                 </div>
                 <div
-                  className={`mt-56 transition-all duration-1000 w-full h-[400px] overflow-scroll shadow-inner shadow-blue-600/20 p-5 rounded-[30px] ${
+                  className={`fixed mt-64 pb-32 bg-white/40 transition-all duration-1000 w-full h-[400px] overflow-scroll shadow-inner shadow-blue-600/20 p-5 rounded-[30px] ${
                     loading
                       ? "opacity-0 translate-y-2"
                       : "opacity-100 translate-y-0"
@@ -254,7 +254,9 @@ function DataPortofolio() {
                     {item.endpoints.map((endpoint) => (
                       <div
                         className={`text-[10px] md:text-xs relative border border-black p-5 rounded-xl md:rounded-2xl overflow-x-clip ${
-                          endpoint.id === selectedId && "border-white/20"
+                          endpoint.id === selectedId
+                            ? "border-yellow-500"
+                            : "border-blue-600"
                         }`}
                         key={endpoint.id}
                       >
@@ -267,12 +269,11 @@ function DataPortofolio() {
                         >
                           <Button nameButton={endpoint.name + "APIs"} />
                         </div>
-                        <ul className="transition-all duration-700 relative list-disc p-2 z-20 peer-hover:text-white peer-hover:[transform:rotateX(360deg)]">
+                        <ul className="transition-all duration-700 relative list-disc p-2 z-30">
                           {endpoint.descriptions.map((desc) => (
                             <li key={desc.id}>{desc.desc}</li>
                           ))}
                         </ul>
-                        <div className="absolute transition-all peer-hover:[transform:rotateX(180deg)] duration-500 w-0 peer-hover:w-full opacity-0 peer-hover:opacity-100 inset-0 h-full bg-blue-600 rounded-2xl z-0"></div>
                       </div>
                     ))}
                   </div>

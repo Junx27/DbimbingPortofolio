@@ -41,7 +41,7 @@ function DataHome() {
     >
       <div className="flex flex-col md:flex-row justify-between pt-72 md:pr-32 md:pt-32 items-center">
         <div
-          className={`transition-all duration-600 mt-3 md:mt-0 mr-5 md:mr-10 shadow-lg shadow-sky-600/20 bg-white/75 md:bg-transparent pt-10 md:pt-20 px-10 md:px-32 rounded-r-full ${
+          className={`z-30 transition-all duration-600 mt-3 md:mt-0 mr-5 md:mr-10 shadow-lg shadow-sky-600/20 bg-white/75 md:bg-transparent pt-10 md:pt-20 px-10 md:px-32 rounded-r-full ${
             loading ? "opacity-0 -translate-x-32" : "opacity-100 translate-x-0"
           }`}
         >
